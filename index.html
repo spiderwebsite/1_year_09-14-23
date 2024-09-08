@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=devise-width, initial-scale=1.0">
+        <title>Log In</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <form action="">
+                <h1>Log In</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" id="email" name="username" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" id="password" name="password" required>
+                </div>
+                <button type="submit" value="login" class="btn" onclick="index()">Log In</button>
+            </form>
+        </div>
+        <script>
+            function index(){
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+                if (email== "Nikki" && password== "091423"){
+                    window.location.assign("index1.html");
+                    alert("LOG IN SUCCESSFULLY");
+                }
+                else{
+                    alert("INVALID INFORMATION");
+                    return;
+                }
+            }
+        </script>
+    </body>
+</html>
